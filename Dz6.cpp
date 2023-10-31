@@ -11,8 +11,8 @@ int main()
     if (min > max) swap(min, max);
 
     for (int i = min; i <= max; i++) {
-        if (i % i == 0 && i % 1 == 0 && (i % 2 <= 1 && i % 2 >= 2)) i++;
-        j = i;
+        if (i % i == 0 && i % 1 == 0 && (i % 2 <= 1 && i % 2 >= 2)) j++;
+        
     }
     
     cout << j;//почему то не работает проверка 
