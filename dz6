@@ -1,0 +1,109 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    srand(time(NULL));
+    setlocale(LC_ALL, "rus");
+    /*int ar [10];
+    int min =  10 + rand() % (90 + 1 - 2); //#1
+    int max =  10 + rand() % (90 + 1 - 2);
+    for(int i = 0;i < 10;i++){
+        
+        int r = 10 + rand() % (90 + 1 - 2);
+        ar[i] = r;
+        max = ar[0];
+        min = ar[0];
+        if (r < min){
+            min = r;
+        }
+        
+        if (r > max){
+            max = r;
+        }
+    }
+    
+    cout << min << " " << max;*/ //#2
+    
+    /*int ar [10];
+    int max,sum = 0 ;
+    int a,b;
+    cin >> a >>b;
+    cin >> max;
+    for(int i = 0;i < 10;i++){
+        
+        int r = a + rand() % (b + 1 - a);
+        ar[i] = r;
+        if (r < max){
+            sum+=max;
+        }
+        
+        
+    }
+    cout << ar;
+    cout << sum;*/
+    
+    /*int ar[12]; //#3
+    int prib;
+    int min = 999999;
+    int max = 0;
+    int d1,d2;
+    cout << "dip";
+    cin >> d1;
+    cin >> d2;
+    
+    for(int i=0;i < 12;i++){
+        cout << "prib";
+        cin >> prib;
+        ar[i] = prib;
+    }
+    
+    for(int i=d1-1;i<d2;i++){
+        if (ar[i] < min){
+            min = ar[i];
+        }
+        
+        if (ar[i] >  max){
+            max = ar[i];
+        }
+    }
+    cout << " min "<< min << " max  " << max;*/
+    
+    float min =  -2 + rand() % (9 + 1 - 2); //#1
+    float max =  -2 + rand() % (9 + 1 - 2);
+    int n,maxn=0,minn=0,c1=0,c2=0;
+    int sumotr=0,proizvdip=1,proizvchet=1;
+    cout << "n";
+    cin >> n;
+    for(int i = n;i < 10;i++){
+        c1=i;
+        c2=i;
+        float r -2 + rand() % (9 + 1 - 2);
+        ar[i] = r;
+        max = ar[0];
+        min = ar[0];
+        if (r < min){
+            min = r;
+            minn=c1;
+        }
+        
+        if (r > max){
+            max = r;
+            maxn=c2;
+        }
+        
+        if (r < 0){
+            sumotr+=r;
+        }
+        
+        if(r%2=0){
+            proizvchet*=r;
+        }
+    }
+    
+    for(int i = minn-1;i<maxn;i++){
+        proizvdip*=ar[i];
+    }
+    
+    
+    
+}
