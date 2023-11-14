@@ -34,7 +34,7 @@ int main(){
         int r = a + rand() % (b + 1 - a);
         ar[i] = r;
         if (r < max){
-            sum+=max;
+            sum+=r;
         }
         
         
