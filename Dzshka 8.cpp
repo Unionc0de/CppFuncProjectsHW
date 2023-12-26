@@ -18,7 +18,7 @@ int main()
     }
 
     
-    int count[size] = { 0 };
+    int count[size] ;
 
     // Подсчет количества каждого элемента в массиве
     for (int i = 0; i < size; i++) {
@@ -39,7 +39,6 @@ int main()
         cout << arr[i] << " ";
     }
 
-    return 0;
 }
 
 
